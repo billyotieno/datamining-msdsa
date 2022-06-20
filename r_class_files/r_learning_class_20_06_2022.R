@@ -45,7 +45,8 @@ length(array_a)
 max(array_a)
 min(array_a)
 
-get_odds <- function(array=NA){
+get_even <- function(array=NA){
+  # Function prints even numbers from an array_list
   for (item in array) {
      if (item %% 2 == 0){
         print(paste("This number is an even number: ", item))
@@ -53,7 +54,56 @@ get_odds <- function(array=NA){
   }
 }
 
-get_odds(array_a)
+get_even(array_a)
+
+account = 200000
+
+# Conditional Checks / Conditional Statements
+if (account < 10000){
+  print("Billy you are broke as f**ck!!! Man up - Check your spending")
+}else if (account >= 10000 && account <= 50000){
+  print("Billy you have some money but your are not far from being broke!!")
+}else{
+  print("Man you got money!! Good financial managment")
+}
+
+# Looping structures in R
+# 1. for-loop
+# 2. while-loop
+# 3. do-while loop
+
+# Problem: print "hello" 5 times
+word <- "Hello"
+count = 5
+
+# Print from 5 to 1
+while(count >= 0){
+  print(count)
+  count <- count - 1
+}
+
+# Do while case in R
+repeat{
+  print(count)
+  count <- count - 1
+  if(count < 0){break}
+}
+
+# For Loop in R
+# Fetch all prime numbers between 1 and 100
+
+1:20
+x = 1:20
+x
+
+# Functions
+# 1. Library Functions e.g. print, grepl, cat, mean, max etc.
+# 2. User-defined functions e.g. created by you and do documentation.
+
+
+
+
+
 
 
 
