@@ -100,10 +100,29 @@ x
 # 1. Library Functions e.g. print, grepl, cat, mean, max etc.
 # 2. User-defined functions e.g. created by you and do documentation.
 
+myFunction <- function(a){
+  print(a)
+}
 
+myFunction("Billy Otieno")
 
+# Function returning a list of even numbers from a list of 100 numbers
+input_list <- c(1:100)
+input_list
 
+func.even <- function(lists = NA){
+  
+   even_number_list <- c()
+   for (number in lists){
+     if(number %% 2 == 0){
+       append(even_number_list, number)
+     }
+   }
+   
+   return (even_number_list)
+}
 
+func.even(input_list)
 
 
 
